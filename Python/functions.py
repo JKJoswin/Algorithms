@@ -1,0 +1,41 @@
+# def greet(name):
+#     print(f"Hello {name}!")
+#     print("Nice to meet you!")
+
+# username = input("Enter your name: ")
+# greet(username)
+
+# def factorial(num):
+#     if num==0:
+#         return 1
+#     return num * factorial(num-1)
+
+# number = int(input("Enter a number: "))
+# print(factorial(number))
+
+def add(a,b):
+    return a+b
+
+def subtract(a,b):
+    return a-b
+
+def multiply(a,b):
+    return a*b
+
+def divide(a,b):
+    return a/b
+
+num1=float(input("Enter the first number: "))
+num2=float(input("Enter the second number: "))
+choice=input("Enter the operation (+,-,*,/): ")
+
+if choice == "+":
+    print(add(num1,num2))
+elif choice == "-":
+    print(subtract(num1,num2))
+elif choice == "*":
+    print(multiply(num1,num2))
+elif choice == "/":
+    print(divide(num1,num2))
+else:
+    print("Invalid operation. Use '+','-','*' or '/'.")
